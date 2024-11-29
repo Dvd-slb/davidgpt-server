@@ -1,0 +1,10 @@
+[Unit]
+Description=This service recognize if new call arrive
+
+[Service]
+EnvironmentFile="<path/to/file/where/access/data/are/stored[emails,keys,...]>"
+ExecStart="</path/to/script/new_file_detector.sh>"
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
