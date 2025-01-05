@@ -1,0 +1,11 @@
+[Unit]
+Description=Block SIP attackers
+After=firewalld.service fail2ban.service
+
+[Service]
+ExecStart="</.../init_sip_blocker.sh>"
+Restart=no
+User=root
+
+[Install]
+WantedBy=multi-user.target

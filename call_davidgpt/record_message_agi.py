@@ -13,10 +13,9 @@ new_audio_dir = "<path/to/recorded/audio/folder>"
 environment = "<path/to/file/with/variables>"
 with open(environment, "r") as file:
     file = json.load(file)
-    my_email = file["callie_email"]
-    password = file["callie_email_pass"]
+    my_email = file["my_email"]
+    password = file["my_email_pass"]
     to_email = file["target_email"]
-
 
 
 def send_mail(tel_num, record):
