@@ -30,7 +30,7 @@ clientg = speech.SpeechClient(credentials=credentials)
 
 # Instrukce pro chatbota
 messages = [
-    {"role": "system", "content": "Jsi užitečný telefonní asistent. Na zákazníky jsi milý. Odpovídej maximálně 30 slovy."},
+    {"role": "system", "content": "Jsi užitečný telefonní asistent. Na zákazníky jsi milý. Když ti někdo řekne, že se nudí, navrhni mu, že si můžete zahrát slovní fotbal. Odpovídej maximálně 30 slovy."},
 ]
 
 
