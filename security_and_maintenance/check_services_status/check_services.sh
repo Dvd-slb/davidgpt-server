@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Služby, na jejichž nečekané zastavení chci být upozorněn
-services=("firewalld" "asterisk" "new_file_detector" "fail2ban" "init_sip_blocker")
+services=("firewalld" "asterisk" "new_file_detector" "fail2ban")
 
 for service in ${services[@]}; do
 	systemctl status $service > /dev/null 2>&1
